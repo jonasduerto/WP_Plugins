@@ -1,0 +1,140 @@
+#blobs_showcase .tb_repeatable_field_content > .themify_builder_field:nth-child(10), /* Left text field */
+#blobs_showcase .tb_repeatable_field_content > .themify_builder_field:nth-child(11), /* Top text field */
+#blobs_showcase,
+#blobs_showcase .themify_builder_dropdown li:first-child, /* duplicate row button */
+#blobs_showcase + .add_new,
+#blobs_showcase .tb_repeatable_field_top,
+#pointers hr,
+#blobs_showcase .themify_builder_row_top,
+#blobs_showcase .module_row {
+	display: none;
+}
+#pointers {
+	text-align: center;
+	padding: 10px 0;
+	min-height: 250px;
+}
+#pointers-preview {
+	position: relative;
+	display: block;
+	text-align: center;
+	max-width: 100%;
+	background: #ededed;
+	margin-bottom: 20px;
+	padding: 20px 10px;
+}
+
+#pointers-preview > div {
+	display: inline-block;
+	position: relative;
+}
+
+#pointers-preview .tb-blob {
+	position: absolute;
+	cursor: pointer;
+	border-radius: 100%;
+	border: none;
+}
+#pointers-preview .tb-blob.active .tb-blob-icon {
+	background: #C60000;
+}
+#pointers-preview .tb-blob-icon {
+	background-color: #2ea5ed;
+	background-image: -moz-linear-gradient(top,#38b1ef,#2094e9);
+	background-image: -ms-linear-gradient(top,#38b1ef,#2094e9);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(#38b1ef),to(#2094e9));
+	background-image: -webkit-linear-gradient(top,#38b1ef,#2094e9);
+	background-image: -o-linear-gradient(top,#38b1ef,#2094e9);
+	background-image: linear-gradient(top,#38b1ef,#2094e9);
+	background-repeat: repeat-x;
+	-webkit-box-shadow: 0 0 2px rgba(255,255,255,0.4) inset;
+	-moz-box-shadow: 0 0 2px rgba(255,255,255,0.4) inset;
+	box-shadow: 0 0 2px rgba(255,255,255,0.4) inset;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 100%;
+	z-index: 2;
+	width: 16px;
+	height: 16px;
+	position: relative;
+}
+.tb-blob-icon:after {
+	content: "+";
+	font: 16px/100% Arial;
+	color: #fff;
+	position: absolute;
+	top: 1px;
+	left: 0;
+	width: 16px;
+	height: 16px;
+	text-align: center;
+	-webkit-font-smoothing: none;
+	font-smoothing: none;
+}
+#pointers-preview img {
+	max-width: 100%;
+	height: auto;
+}
+#pointers-preview .loading {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0, .6);
+	z-index: 999;
+	display: none;
+}
+#pointers-preview .loading .fa {
+	color: #fff;
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#blobs_showcase {
+	max-width: 680px;
+	margin: auto;
+}
+#blobs_showcase .module_row {
+	border: none !important;
+	box-shadow: none !important;
+}
+#blobs_showcase .themify_builder_label {
+	text-align: right;
+}
+#blobs_showcase .themify_builder_field:not(:first-child) .themify_builder_input {
+	text-align: left;
+	padding-left: 5%;
+	width: 65.5%;
+}
+#pointers .tb-blob-delete {
+	background: #000;
+	color: #fff;
+	position: absolute;
+	bottom: 100%;
+	right: 0;
+	padding: 2px 7px;
+	border-radius: 100%;
+	font-size: 13px;
+	margin-bottom: 5px;
+}
+#pointers .tb-blob-delete:hover {
+	background: red;
+}
+
+/* Docked Panel */
+.tb_module_panel_docked #blobs_showcase .themify_builder_label {
+	text-align: left;
+}
+.tb_module_panel_docked #blobs_showcase .themify_builder_field:not(:first-child) .themify_builder_input {
+	padding-left: 0;
+	width: 100%;
+}
+.tb_module_panel_docked #blobs_showcase .themify_builder_field:not(:first-child) .themify_builder_input > input[type="text"] {
+	width: 100%;
+}

@@ -1,0 +1,13 @@
+.module_row.has-restriction:before,
+.module.has-restriction:before {
+    position: absolute;
+    content: "\f023" !important;
+    top: 2px;
+    left: 50%;
+    z-index: 1000;
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: block;
+}

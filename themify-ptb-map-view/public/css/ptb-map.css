@@ -1,0 +1,45 @@
+.ptb_map_view{
+    width: 100%;
+    height: 350px;
+}
+.ptb_map_view_info_window{
+    background: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.ptb_map_multiple.ptb_map_view_info_window{
+    max-height: 250px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+ul.ptb_map_view_info_window li{
+    margin: 0;
+    padding: 0;
+}
+.ptb_map_view_info_window.ptb_map_multiple li:not(:last-child){
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+}
+.ptb_map_view_info_window a{
+    text-decoration: none;
+    box-shadow: none;
+}
+.ptb_map_view_info_window .ptb_map_view_post_title{
+    margin:  0;
+    font-weight: normal;
+    display: block;
+    margin-top: 10px;
+}
+.ptb_map_icon{
+    font-size: 32px;
+}
+.ptb_map_view_wrapper,.ptb_map_view_wrapper *{
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+}
+.ptb_map_view_info{
+    margin-top:10px;
+}
